@@ -1,0 +1,115 @@
+GET _search
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
+PUT cn_sec_risk_asset_audit_base_info_index
+{
+    "settings" : {
+        "index" : {
+            "number_of_shards" : 5,
+            "number_of_replicas" : 1
+        }
+    }
+}
+
+
+
+PUT cn_sec_risk_asset_audit_base_info_index/cn_sec_risk_asset_audit_base_info_type/_mapping
+{
+  "properties": {
+    "driver_id": {
+      "type": "keyword"
+    },
+    "card_id": {
+      "type": "keyword"
+    },
+    "phone": {
+      "type": "keyword"
+    },
+    "car_num": {
+      "type": "keyword"
+    },
+    "row_key": {
+      "type": "keyword"
+    },
+    "timestamp": {
+      "type": "date",
+      "format": "yyyy-MM-dd HH:mm:ss"
+    },
+    "log_type": {
+      "type": "keyword"
+    }
+  }
+}
+
+
+
+POST /cn_sec_risk_asset_audit_base_info_index/cn_sec_risk_asset_audit_base_info_type/
+{
+   "driver_id": "37367597536724370",
+    "card_id": "512501197203035172",
+    "phone": "13300009999",
+    "car_num": "京ALI899",
+    "row_key": "24521373675975367243707660519578754",
+     "timestamp": "2019-07-12 17:36:22",
+      "log_type": "1"
+}
+
+GET /cn_sec_risk_asset_audit_base_info_index/cn_sec_risk_asset_audit_base_info_type/dBqR5WsBepZebSwJMrN2
+
+GET /cn_sec_risk_asset_audit_base_info_index/_search
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
+
+DELETE /cn_sec_risk_asset_audit_base_info_index
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

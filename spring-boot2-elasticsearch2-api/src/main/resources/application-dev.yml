@@ -1,0 +1,24 @@
+server:
+        port: 6000  #配置端口
+        address : localhost
+        connecyion.timeout: 6000
+        tomcat.max-threads: 0
+        tomcat.uri-encoding: UTF-8
+        servlet:
+                  session:
+                            timeout: 30
+
+spring:
+      application:
+                    name: elasticsearch-api
+
+logging:
+        level:
+              alibaba:
+                      druid: debug
+
+elasticsearch:
+              host: 10.96.91.192
+              port: 9300
+              index: cn_beauty_business_index
+              type: cn_beauty_business_type
