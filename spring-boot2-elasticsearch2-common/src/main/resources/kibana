@@ -37,7 +37,7 @@ PUT cn_sec_risk_asset_audit_base_info_index/cn_sec_risk_asset_audit_base_info_ty
     },
     "timestamp": {
       "type": "date",
-      "format": "yyyy-MM-dd HH:mm:ss"
+    "format": "yyyy-MM-dd HH:mm:ss Z||yyyy-MM-dd HH:mm:ss||yyyy-MM-dd HH:mm:ss.SSS Z||yyyy-MM-dd HH:mm:ss.SSS||yyyy-MM-dd HH:mm:ss,SSS||yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss,SSS Z||yyyy/MM/dd HH:mm:ss,SSS Z||epoch_millis"
     },
     "log_type": {
       "type": "keyword"
